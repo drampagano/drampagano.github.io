@@ -358,27 +358,6 @@ a:hover {
   padding-block: clamp(2rem, 6vw, 4.5rem);
 }
 
-@media (min-width: 900px) {
-  .about {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
-    align-items: start;
-  }
-
-  .about-side {
-    position: sticky;
-    top: calc(var(--header-h) + 2rem);
-  }
-}
-
-.about-photo {
-  width: 100%;
-  max-width: 26rem;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: var(--radius);
-  background: var(--media-bg);
-}
-
 .about-main > section + section {
   margin-top: clamp(2.5rem, 6vw, 4rem);
   padding-top: clamp(2rem, 5vw, 3rem);
