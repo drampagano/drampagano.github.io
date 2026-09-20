@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name - Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name. Selected projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to projects</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="index.html">Your Name</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Work</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="work">
+    <!-- INTRO: change this text to one or two sentences about you. -->
+    <section class="intro wrap" aria-label="Introduction">
+      <p>Your role or field, in one clear sentence. Scroll down to see selected projects.</p>
+    </section>
+
+    <!--
+      HOW TO ADD A PROJECT
+      1. Copy one <article class="project"> block below.
+      2. Paste it after the last project.
+      3. Change the title, text, and images.
+      Each <div class="slide"> is one image or video in the gallery.
+      A project with one slide shows no arrows.
+    -->
+
+    <!-- PROJECT 1: three images -->
+    <article class="project wrap">
+      <div class="gallery" data-gallery>
+        <div class="gallery-track" tabindex="0" role="region" aria-label="Project One gallery">
+          <div class="slide"><img src="assets/placeholder-a.svg" alt="Describe this image for screen reader users" width="1600" height="1000"></div>
+          <div class="slide"><img src="assets/placeholder-b.svg" alt="Describe this image" width="1600" height="1000" loading="lazy"></div>
+          <div class="slide"><img src="assets/placeholder-c.svg" alt="Describe this image" width="1600" height="1000" loading="lazy"></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <div>
+          <h2 class="project-title">Project One</h2>
+          <p class="project-meta">Client or context, 2026</p>
+        </div>
+        <div>
+          <p class="project-text">Write two or three sentences here. Say what the project was, what your role was, and what the result was.</p>
+          <p class="project-tags">Skill one, skill two, tool three</p>
+          <a class="project-link" href="#">View full project</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 2: two slides (image and video) -->
+    <article class="project wrap">
+      <div class="gallery" data-gallery>
+        <div class="gallery-track" tabindex="0" role="region" aria-label="Project Two gallery">
+          <div class="slide"><img src="assets/placeholder-d.svg" alt="Describe this image" width="1600" height="1000" loading="lazy"></div>
+
+          <!-- VIDEO OPTION A: a video file in the assets folder.
+          <div class="slide">
+            <video controls preload="metadata" poster="assets/video-poster.jpg">
+              <source src="assets/demo.mp4" type="video/mp4">
+            </video>
+          </div>
+          -->
+
+          <!-- VIDEO OPTION B: a YouTube embed. Replace VIDEO_ID.
+          <div class="slide">
+            <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Project Two video" allowfullscreen loading="lazy"></iframe>
+          </div>
+          -->
+
+          <div class="slide"><img src="assets/placeholder-a.svg" alt="Describe this image" width="1600" height="1000" loading="lazy"></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <div>
+          <h2 class="project-title">Project Two</h2>
+          <p class="project-meta">Client or context, 2025</p>
+        </div>
+        <div>
+          <p class="project-text">Write two or three sentences here. Keep each project text short. Let the images show the work.</p>
+          <p class="project-tags">Skill one, skill two</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 3: one image (no arrows) -->
+    <article class="project wrap">
+      <div class="gallery" data-gallery>
+        <div class="gallery-track" role="region" aria-label="Project Three gallery">
+          <div class="slide fit-cover"><img src="assets/placeholder-b.svg" alt="Describe this image" width="1600" height="1000" loading="lazy"></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <div>
+          <h2 class="project-title">Project Three</h2>
+          <p class="project-meta">Client or context, 2024</p>
+        </div>
+        <div>
+          <p class="project-text">Write two or three sentences here.</p>
+          <p class="project-tags">Skill one, skill two, tool three</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; Your Name</p>
+      <p><a href="about.html#contact">Get in touch</a></p>
+    </div>
+  </footer>
+</body>
+</html>
